@@ -1,0 +1,14 @@
+lang: ruby
+before_install: gem install bundler --pre
+install:
+  - gem update --system
+  - bundle update
+rvm:
+  - 2.0.0
+  - 1.9.2
+notifications:
+  recipients:
+    - namusyaka@gmail.com
+branches:
+  only:
+    - master
