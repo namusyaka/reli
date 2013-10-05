@@ -17,5 +17,10 @@ module RELI
       bf = RELI.new(:type => :monamona)
       expect(bf.run(hello_world(:monamona))).to eq("Hello World!")
     end
+
+    it "support malbolge" do
+      bf = RELI.new(:type => :malbolge)
+      expect(bf.run(hello_world(:malbolge))).to eq("Hello World!")
+    end
   end
 end
