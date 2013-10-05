@@ -10,7 +10,7 @@ module RELI
     end
 
     def run(code)
-      @code  = code.chars
+      @code  = code.split(//u)
       @index = 0
       code_length = @code.length
       while @index < code_length do
