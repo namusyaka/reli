@@ -77,9 +77,19 @@ ook.run(source) #=> Hello World!
 ```ruby
 require 'reli/monamona'
 
-mona   = RELI::MONAmona.new
+mona   = RELI::Monamona.new
 source = "NNNNNNNNNNnMNNNNNNNMNNNNNNNNNNMNNNMNOOOOAaMNNoMNoNNNNNNNooNNNoMNNoOONNNNNNNNNNNNNNNoMoNNNoAAAAAAoAAAAAAAAoMNo"
 mona.run(source) #=> Hello World!
+```
+
+### Malbolge
+
+```ruby
+require 'reli/malbolge'
+
+malbolge = RELI::Malbolge.new
+source   = "(=<`#9]~6ZY32V6/S3,Pq)M'&Jk#Gh~De{z@>`v*;yKw%ut4Uqp0/ml>jibgIedFFaZB^{@[ZfXWV98Mqpo31kj.DCgT"
+malbolge.run(source) #=> Hello World!
 ```
 
 ## TODO
@@ -94,6 +104,11 @@ mona.run(source) #=> Hello World!
 3. commit your changes. (`git commit -am 'commit message'`)
 4. push to the branch. (`git push origin my-feature`
 5. send pull request.
+
+## Authors
+
+* namusyaka
+* pixie-grasper
 
 ## License
 
