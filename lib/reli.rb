@@ -1,6 +1,7 @@
 require 'reli/brainfuck'
 require 'reli/ook'
 require 'reli/monamona'
+require 'reli/malbolge'
 
 module RELI
   def self.new(options = {})
