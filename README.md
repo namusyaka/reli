@@ -1,5 +1,7 @@
 # RELI (Ruby Esoteric Language Implementation)
 
+[![Build Status](https://travis-ci.org/namusyaka/reli.png)](https://travis-ci.org/namusyaka/reli)
+
 Generic interface for Esoteric Language Implementations which is written in Ruby.
 
 ## Installation
