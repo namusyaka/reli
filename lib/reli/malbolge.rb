@@ -40,7 +40,7 @@ module RELI
           rotr
           @a = @memory[@d]
         when 112
-          @a = @memory[@d] = crz @memory[@d], @a
+          @a = @memory[@d] = crz(@memory[@d], @a)
         when 60
           @buffer[@buffer.length] = (@a.modulo 256).chr
         when 47
