@@ -22,7 +22,7 @@ Or execute this.
 
 ### Basic
 
-`type:` support `:brainfuck`, `:ook`, and `:monamona`.
+`type:` support `:brainfuck`, and `:ook`, `:monamona`, and `:malbolge`.
 
 ```ruby
 require 'reli'
