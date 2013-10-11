@@ -19,17 +19,15 @@ module RELI
 
     on(?9) do
       99.downto(1) { |i|
-        @buffer << <<-EOS
+        @buffer << <<-EOS.gsub(/^ */, "")
           #{bottles i} of beer on the wall, #{bottles i} of beer.
           Take one down and pass it around, #{bottles i - 1} of beer on the wall.
         EOS
-          .gsub(/^ */, "")
       }
-      @buffer << <<-EOS
+      @buffer << <<-EOS.gsub(/^ */, "")
         No more bottles of beer on the wall, no more bottles of beer.
         Go to the store and buy some more, 99 bottles of beer on the wall.
       EOS
-        .gsub(/^ */, "")
       @index += @size
     end
 
