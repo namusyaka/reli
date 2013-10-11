@@ -3,6 +3,7 @@ require 'reli/braincrash'
 require 'reli/ook'
 require 'reli/monamona'
 require 'reli/malbolge'
+require 'reli/hq9plus'
 
 module RELI
   def self.new(options = {})

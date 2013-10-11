@@ -22,7 +22,7 @@ Or execute this.
 
 ### Basic
 
-`type:` support `:brainfuck`, `:braincrash`, `:ook`, `:monamona`, and `:malbolge`.
+`type:` support `:brainfuck`, `:braincrash`, `:ook`, `:monamona`, and `:malbolge`, `:hq9plus`
 
 ```ruby
 require 'reli'
@@ -100,6 +100,16 @@ require 'reli/malbolge'
 malbolge = RELI::Malbolge.new
 source   = "(=<`#9]~6ZY32V6/S3,Pq)M'&Jk#Gh~De{z@>`v*;yKw%ut4Uqp0/ml>jibgIedFFaZB^{@[ZfXWV98Mqpo31kj.DCgT"
 malbolge.run(source) #=> Hello World!
+```
+
+### HQ9+
+
+```ruby
+require 'reli/hq9plus'
+
+hq9plus = RELI::Hq9plus.new
+source  = "H"
+hq9plus.run(source) #=> Hello, world!
 ```
 
 ## TODO
