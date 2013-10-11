@@ -22,7 +22,7 @@ Or execute this.
 
 ### Basic
 
-`type:` support `:brainfuck`, and `:ook`, `:monamona`, and `:malbolge`.
+`type:` support `:brainfuck`, `:braincrash`, `:ook`, `:monamona`, and `:malbolge`.
 
 ```ruby
 require 'reli'
@@ -40,6 +40,16 @@ require 'reli/brainfuck'
 brainfuck = RELI::Brainfuck.new
 source    = "+++++++++[>++++++++<-]>.<++++[>+++++++<-]>+.+++++++..+++.<++++++++[>----------<-]>+.<+++++++[>++++++++<-]>-.<+++++[>+++++<-]>-.+++.------.--------.<++++++++[>--------<-]>---."
 brainfuck.run(source) #=> Hello World!
+```
+
+### Braincrash
+
+```ruby
+require 'reli/braincrash'
+
+braincrash = RELI::Braincrash.new
+source     = ">>>>>>^<<[-]>[[<+>-]>]<<<<<<<<<<<<<"
+braincrash.run(source) #=> Hello World!
 ```
 
 ### Ook!

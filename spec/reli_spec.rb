@@ -8,6 +8,11 @@ module RELI
       expect(bf.run(hello_world(:brainfuck))).to eq("Hello World!")
     end
 
+    it "support braincrash" do
+      bf = RELI.new(:type => :braincrash)
+      expect(bf.run(hello_world(:braincrash))).to eq("Hello World!")
+    end
+
     it "support ook" do
       bf = RELI.new(:type => :ook)
       expect(bf.run(hello_world(:ook))).to eq("Hello World!")

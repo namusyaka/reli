@@ -1,4 +1,5 @@
 require 'reli/brainfuck'
+require 'reli/braincrash'
 require 'reli/ook'
 require 'reli/monamona'
 require 'reli/malbolge'
