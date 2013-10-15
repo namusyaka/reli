@@ -4,7 +4,7 @@ module RELI
     def initialize(options = {})
       @memory  = []
       @buffer  = []
-      @pointer = 0; @memory[0] = 0
+      @pointer = @memory[0] = 0
       @size    = 1
       @break   = 0
     end
